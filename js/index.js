@@ -1,5 +1,12 @@
 //top_banner广告,关闭
-
+//更多精彩那个下拉菜单尖角号，以及菜单
+$(".lead_xiala_a").hover(function(){
+	$(".lead_xiala_span").html("v");
+	$(".lead_xiala_box").css("display","block");
+},function(){
+	$(".lead_xiala_span").html("∧");
+	$(".lead_xiala_box").css("display","none");
+})
 //搜索框
 $("#searchK").focus(function(){
 	$(".posSea1").css("display","none");
