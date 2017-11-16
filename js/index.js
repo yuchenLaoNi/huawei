@@ -183,7 +183,7 @@ var flag = true; //控制 当点击楼层号时，禁止滚动条的代码执行
 	            .removeClass("active");
 	    }
 	})
-//下面的左右按键（轮播）  通用型!!!!
+//下面的左右按键（轮播）  通用型!!!!<暂未封装>
 $(".next").click(function(){
 	$(".prev").css("cursor","pointer");
 	$mL = parseInt($(".lunbo_con").css("margin-left"));

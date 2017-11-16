@@ -135,7 +135,6 @@
 .LUNBO_click {
   width: 1218px;
   height: 305px;
-  background: #fff;
   overflow: hidden;
   position: relative; }
 
@@ -144,6 +143,7 @@
   height: 290px;
   position: relative; }
   .lunbo_con li {
+    background: #fff;
     float: left;
     width: 220px;
     height: 290px;
@@ -766,24 +766,21 @@
 
 .znHome {
   min-height: 1092px;
-  _height: 1092px;
-  background: yellow; }
+  _height: 1092px; }
   .znHome #zhHome_banner {
     height: 305px;
     padding-top: 12px; }
 
 .hot_parts {
   min-height: 1092px;
-  _height: 1092px;
-  background: pink; }
+  _height: 1092px; }
   .hot_parts #hot_parts_banner {
     height: 305px;
     padding-top: 12px; }
 
 .brand_parts {
   min-height: 1092px;
-  _height: 1092px;
-  background: blue; }
+  _height: 1092px; }
   .brand_parts #brand_parts_banner {
     height: 305px;
     padding-top: 12px; }
