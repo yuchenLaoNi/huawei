@@ -1,5 +1,5 @@
 @charset "UTF-8";
-#lead_con, .top_bannerC, .nav_con, #my_nav, #show, #hot, .h, #recommend, #midBanner, #phone {
+#lead_con, .top_bannerC, .nav_con, #my_nav, #show, #hot, .h, #recommend, #midBanner, .phone, .noteBook, .pad, .watch, .znHome, #zhHome_banner, .hot_parts, #hot_parts_banner, .brand_parts, #brand_parts_banner, #bottom_banner, .pro_con, .bottom_nav_con, .bottom_con {
   width: 1218px;
   margin: 0 auto; }
 
@@ -25,9 +25,38 @@
 
 .change_nav {
   margin-left: 28px;
-  height: 38px; }
+  height: 38px;
+  float: left;
+  padding: 20px 0 9px 0; }
   .change_nav li {
-    border-bottom: 2px solid #B60600; }
+    height: 38px;
+    float: left; }
+    .change_nav li a {
+      height: 36px;
+      display: block;
+      margin: 0px 10px;
+      line-height: 42px;
+      font-size: 16px;
+      color: #a4a4a4; }
+    .change_nav li a:hover {
+      border-bottom: 2px solid #B60600;
+      color: #B60600; }
+
+.chang_more {
+  float: right;
+  height: 38px;
+  width: 100px;
+  padding: 20px 0 9px 0;
+  text-align: center;
+  line-height: 42px; }
+  .chang_more a {
+    font-size: 18px;
+    color: #3A3A3A;
+    transition: 0.5s;
+    padding: 0 14px; }
+  .chang_more a:hover {
+    color: #B60600;
+    font-size: 20px; }
 
 .phone_name {
   color: #3a3a3a;
@@ -237,7 +266,8 @@
           margin-top: 11px; }
 
 #banner {
-  height: 450px; }
+  height: 450px;
+  position: relative; }
   #banner .con_h0 {
     position: relative;
     margin: 0 auto;
@@ -371,6 +401,26 @@
       background: url(../index_img/b7.jpg) no-repeat center; }
     #banner .bannerlink .b8 {
       background: url(../index_img/b8.jpg) no-repeat center; }
+  #banner .banner_lead {
+    width: 200px;
+    height: 10px;
+    position: absolute;
+    top: 410px;
+    left: 890px;
+    right: 740px;
+    bottom: 30px;
+    margin-left: -150px;
+    padding-left: 100px; }
+    #banner .banner_lead .banner_leadBox {
+      width: 10px;
+      height: 10px;
+      border: 1px solid #fff;
+      cursor: default;
+      border-radius: 10px;
+      margin-left: 10px;
+      display: inline-block; }
+    #banner .banner_lead .current {
+      background: #fff; }
 
 #big_bg {
   min-height: 2000px;
@@ -649,5 +699,133 @@
       background: url(../index_img/midbanner4.jpg) no-repeat center; }
     #midBanner .midbannerlink .mb5 {
       background: url(../index_img/midbanner5.jpg) no-repeat center; }
+
+.phone {
+  min-height: 775px;
+  _height: 775px;
+  background: red; }
+
+.noteBook {
+  min-height: 358px;
+  _height: 358px;
+  background: brown; }
+
+.pad {
+  min-height: 775px;
+  _height: 775px;
+  background: blueviolet; }
+
+.watch {
+  min-height: 775px;
+  _height: 775px;
+  background: green; }
+
+.znHome {
+  min-height: 1092px;
+  _height: 1092px;
+  background: yellow; }
+  .znHome #zhHome_banner {
+    height: 305px;
+    padding-top: 12px; }
+
+.hot_parts {
+  min-height: 1092px;
+  _height: 1092px;
+  background: pink; }
+  .hot_parts #hot_parts_banner {
+    height: 305px;
+    padding-top: 12px; }
+
+.brand_parts {
+  min-height: 1092px;
+  _height: 1092px;
+  background: blue; }
+  .brand_parts #brand_parts_banner {
+    height: 305px;
+    padding-top: 12px; }
+
+#bottom_banner {
+  height: 125px;
+  background: red; }
+
+#promise {
+  height: 139px;
+  background: #f0f0f0; }
+  #promise .pro_con {
+    height: 139px; }
+
+#bottom_nav {
+  height: 216px;
+  background: #f0f0f0; }
+  #bottom_nav .bottom_nav_con {
+    height: 216px; }
+
+#bottom {
+  height: 120px;
+  background: #e6e6e6; }
+  #bottom .bottom_con {
+    height: 120px; }
+
+#menu {
+  position: fixed;
+  top: 25%;
+  right: -100px;
+  width: 100px;
+  height: 324px; }
+
+#menu ul li {
+  position: relative;
+  width: 88px;
+  height: 44px;
+  text-align: center;
+  line-height: 44px;
+  font-size: 14px;
+  cursor: pointer;
+  margin-bottom: 2px; }
+  #menu ul li p {
+    width: 150px;
+    height: 2px;
+    background: #B60600;
+    position: absolute;
+    right: -170px;
+    transition: 1s; }
+
+#menu ul li.last {
+  color: #3A3A3A;
+  border-bottom: none; }
+
+#menu ul li span {
+  display: none;
+  width: 88px;
+  height: 44px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #3A3A3A; }
+
+#menu ul li:hover span {
+  display: block;
+  color: #B60600;
+  background: #f5f5f5; }
+
+#menu ul li:hover p {
+  right: -10px; }
+
+#menu ul li.last:hover {
+  font-size: 16px;
+  font-weight: 900; }
+
+#menu ul li span.active {
+  display: block;
+  background: #f5f5f5;
+  color: #B60600; }
+
+#menu ul li:hover span.active {
+  display: block;
+  background: #f5f5f5;
+  color: #B60600; }
+
+#menu ul li p.active {
+  right: -10px; }
 
 /*# sourceMappingURL=index.css.map */
