@@ -786,20 +786,92 @@
     padding-top: 12px; }
 
 #bottom_banner {
-  height: 125px;
-  background: red; }
+  height: 125px; }
+  #bottom_banner img {
+    width: 100%;
+    height: 100%; }
 
 #promise {
   height: 139px;
-  background: #f0f0f0; }
+  background: #f0f0f0;
+  border-bottom: 1px solid #DDDDDD; }
   #promise .pro_con {
-    height: 139px; }
+    height: 47px;
+    padding: 46px 0; }
+    #promise .pro_con .pro_con_all {
+      margin-left: 4px;
+      width: 300px;
+      height: 47px;
+      display: block;
+      float: left;
+      font-size: 18px;
+      line-height: 47px; }
+      #promise .pro_con .pro_con_all a {
+        color: #3A3A3A;
+        line-height: 47px;
+        height: 47px; }
+        #promise .pro_con .pro_con_all a i {
+          width: 47px;
+          height: 47px;
+          margin-right: 16px;
+          display: inline-block;
+          float: left; }
+    #promise .pro_con .pro_con1 {
+      background: url(../index_img/icon-common.png) no-repeat 0px -151px; }
+    #promise .pro_con .pro_con2 {
+      background: url(../index_img/icon-common.png) no-repeat -47px -151px; }
+    #promise .pro_con .pro_con3 {
+      background: url(../index_img/icon-common.png) no-repeat -94px -151px; }
+    #promise .pro_con .pro_con4 {
+      background: url(../index_img/icon-common.png) no-repeat -141px -151px; }
 
 #bottom_nav {
-  height: 216px;
+  height: 217px;
   background: #f0f0f0; }
   #bottom_nav .bottom_nav_con {
-    height: 216px; }
+    height: 172px;
+    padding-top: 26px;
+    padding-bottom: 18px; }
+    #bottom_nav .bottom_nav_con .bn_con {
+      margin-top: 2px;
+      height: 170p; }
+      #bottom_nav .bottom_nav_con .bn_con dl {
+        width: 158px;
+        height: 143px;
+        float: left; }
+        #bottom_nav .bottom_nav_con .bn_con dl dt {
+          width: 158px;
+          height: 48px; }
+          #bottom_nav .bottom_nav_con .bn_con dl dt .line {
+            background: #a8a8a8;
+            width: 22px;
+            height: 2px;
+            margin: 2px 0 12px 0 !important; }
+          #bottom_nav .bottom_nav_con .bn_con dl dt .title {
+            font-size: 14px !important;
+            padding-bottom: 12px;
+            color: #3a3a3a;
+            display: block;
+            border-left: none;
+            padding-left: 0;
+            line-height: 20px;
+            margin-bottom: 0 !important; }
+        #bottom_nav .bottom_nav_con .bn_con dl dd {
+          width: 158px;
+          height: 95px; }
+          #bottom_nav .bottom_nav_con .bn_con dl dd ol {
+            width: 158px;
+            height: 95px; }
+            #bottom_nav .bottom_nav_con .bn_con dl dd ol li {
+              line-height: 24px;
+              height: 24px; }
+              #bottom_nav .bottom_nav_con .bn_con dl dd ol li a {
+                color: #666;
+                cursor: pointer;
+                line-height: 24px;
+                font-size: 12px; }
+              #bottom_nav .bottom_nav_con .bn_con dl dd ol li a:hover {
+                color: #B60600; }
 
 #bottom {
   height: 120px;
