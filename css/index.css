@@ -612,12 +612,26 @@
             margin-right: 11px; }
         #my_nav .my_navlist .my_mess .mess_t .gundong {
           width: 243px;
-          height: 36px;
+          height: 48px;
           float: left;
-          margin-top: 12px; }
-          #my_nav .my_navlist .my_mess .mess_t .gundong a {
-            font-size: 14px;
-            color: #3A3A3A; }
+          position: relative;
+          overflow: hidden; }
+          #my_nav .my_navlist .my_mess .mess_t .gundong ul {
+            width: 243px;
+            height: 240px;
+            position: absolute; }
+            #my_nav .my_navlist .my_mess .mess_t .gundong ul li {
+              width: 243px;
+              height: 48px;
+              line-height: 48px;
+              overflow: hidden;
+              white-space: nowrap;
+              text-overflow: ellipsis; }
+              #my_nav .my_navlist .my_mess .mess_t .gundong ul li a {
+                font-size: 14px;
+                color: #3A3A3A; }
+            #my_nav .my_navlist .my_mess .mess_t .gundong ul li:hover a {
+              color: #B60600; }
       #my_nav .my_navlist .my_mess .mess_b ul {
         width: 301px;
         height: 48px; }
@@ -656,7 +670,10 @@
       width: 291px;
       height: 160px;
       float: left;
-      margin-right: 17px; }
+      margin-right: 17px;
+      transition: 1s; }
+    #show ul li:hover {
+      box-shadow: 0 10px 15px #999; }
     #show ul .margin0 {
       margin-right: 0; }
 
@@ -799,7 +816,7 @@
     height: 47px;
     padding: 46px 0; }
     #promise .pro_con .pro_con_all {
-      margin-left: 4px;
+      margin-left: 3px;
       width: 300px;
       height: 47px;
       display: block;
@@ -838,10 +855,23 @@
       #bottom_nav .bottom_nav_con .bn_con dl {
         width: 158px;
         height: 143px;
-        float: left; }
+        float: left;
+        margin-left: 3px; }
+        #bottom_nav .bottom_nav_con .bn_con dl .call_num {
+          font-size: 22px;
+          height: 22px;
+          line-height: 22px; }
+        #bottom_nav .bottom_nav_con .bn_con dl .hours_24 {
+          font-size: 12px;
+          line-height: 12px;
+          height: 12px;
+          color: #666666;
+          cursor: text;
+          padding-bottom: 5px; }
         #bottom_nav .bottom_nav_con .bn_con dl dt {
           width: 158px;
-          height: 48px; }
+          height: 48px;
+          position: relative; }
           #bottom_nav .bottom_nav_con .bn_con dl dt .line {
             background: #a8a8a8;
             width: 22px;
@@ -856,12 +886,53 @@
             padding-left: 0;
             line-height: 20px;
             margin-bottom: 0 !important; }
+          #bottom_nav .bottom_nav_con .bn_con dl dt .button {
+            position: absolute;
+            left: 60px;
+            bottom: 17px; }
+            #bottom_nav .bottom_nav_con .bn_con dl dt .button .btn {
+              width: 14px;
+              height: 14px;
+              color: #fff;
+              font-size: 14px;
+              line-height: 14px;
+              text-align: center;
+              display: block;
+              background: #b3b3b3;
+              cursor: pointer;
+              float: left;
+              border-radius: 3px;
+              margin-right: 2px; }
+            #bottom_nav .bottom_nav_con .bn_con dl dt .button .btn_prev {
+              background: #ccc;
+              cursor: not-allowed; }
         #bottom_nav .bottom_nav_con .bn_con dl dd {
-          width: 158px;
-          height: 95px; }
+          width: 158px; }
+          #bottom_nav .bottom_nav_con .bn_con dl dd .link_box {
+            width: 161px;
+            height: 35px;
+            padding: 0;
+            margin-top: 10px;
+            background: #FFF;
+            border: 1px solid #ddd;
+            font-size: 14px;
+            line-height: 35px;
+            color: #900 !important;
+            cursor: pointer;
+            border-radius: 5px;
+            display: block; }
+          #bottom_nav .bottom_nav_con .bn_con dl dd .isHidden {
+            overflow: hidden;
+            width: 158px;
+            height: 120px; }
+          #bottom_nav .bottom_nav_con .bn_con dl dd .yqlink {
+            width: 1422px; }
+            #bottom_nav .bottom_nav_con .bn_con dl dd .yqlink .link_red {
+              color: red; }
           #bottom_nav .bottom_nav_con .bn_con dl dd ol {
             width: 158px;
-            height: 95px; }
+            height: 95px;
+            float: left; }
             #bottom_nav .bottom_nav_con .bn_con dl dd ol li {
               line-height: 24px;
               height: 24px; }
@@ -872,12 +943,69 @@
                 font-size: 12px; }
               #bottom_nav .bottom_nav_con .bn_con dl dd ol li a:hover {
                 color: #B60600; }
+          #bottom_nav .bottom_nav_con .bn_con dl dd .online_service {
+            margin: 8px 10px 9px 30px;
+            width: 22px;
+            height: 18px;
+            display: block;
+            float: left;
+            background: url(../index_img/icon-common.png) no-repeat -101px -23px; }
+          #bottom_nav .bottom_nav_con .bn_con dl dd .yellow_mess {
+            margin: 8px 8px 9px 20px;
+            width: 22px;
+            height: 18px;
+            margin-right: 8px;
+            display: block;
+            float: left;
+            background: url(../index_img/icon-common.png) no-repeat -101px -23px; }
 
 #bottom {
-  height: 120px;
+  height: 59px;
+  padding: 26px 0 34px 0;
   background: #e6e6e6; }
   #bottom .bottom_con {
-    height: 120px; }
+    height: 59px; }
+    #bottom .bottom_con .bottom_p1 {
+      width: 79px;
+      height: 16px;
+      float: left;
+      padding: 20px 38px 0 0; }
+      #bottom .bottom_con .bottom_p1 a {
+        width: 79px;
+        height: 16px;
+        display: block; }
+        #bottom .bottom_con .bottom_p1 a img {
+          width: 100%;
+          height: 100%; }
+    #bottom .bottom_con .bottom_p2 {
+      width: 629px;
+      height: 59px;
+      float: left;
+      text-align: left;
+      color: #a4a4a4;
+      line-height: 20px;
+      font-size: 12px; }
+      #bottom .bottom_con .bottom_p2 a {
+        color: #a4a4a4; }
+      #bottom .bottom_con .bottom_p2 a:hover {
+        color: #B60600; }
+    #bottom .bottom_con .bottom_p3 {
+      float: left;
+      width: 390px;
+      height: 24px;
+      padding-top: 15px; }
+      #bottom .bottom_con .bottom_p3 a {
+        float: left;
+        width: 70px;
+        height: 24px;
+        display: block;
+        margin-left: 8px; }
+        #bottom .bottom_con .bottom_p3 a img {
+          width: 100%;
+          height: 100%; }
+
+.margin30 {
+  margin-left: 30px !important; }
 
 #menu {
   position: fixed;

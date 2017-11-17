@@ -73,32 +73,7 @@ $(".banner_leadBox").mouseleave(function(){
 })
 //鼠标移入banner暂停
 /*$(".banner_P").hover(function(){clearInterval(timer1);},function(){timer1 = setInterval(autoPlay_main , 5000)})*/
-//bg_tiao
-window.onload = function(){
-		var oPic = document.getElementById("bg_tiao");
-		var oPicTop = oPic.offsetTop;
-		window.onscroll = function(){
-			var sTop = document.body.scrollTop || document.documentElement.scrollTop;
-//			console.log(sTop)
-			if(sTop>640 && sTop<1200){
-				startMove( parseInt(sTop - 750) , oPic );
-			}
-			
-		}
-	}
-	var timer = null;
-	function startMove(target,obj){
-		clearInterval(timer);
-		timer = setInterval(function(){
-			var speed = (target-obj.offsetTop)/10;
-			var speed = speed > 0 ? Math.ceil(speed) : Math.floor(speed);
-			if( obj.offsetTop == target ){
-				clearInterval(timer);
-			}else{
-				obj.style["top"] = obj.offsetTop + speed + "px";
-			}
-		},30)
-	}
+
 //banner上的导航栏
 $(".bnav_li").mouseenter(function(){
 	var index = $(this).index();
@@ -253,4 +228,106 @@ $(".prev").click(function(){
 		$(".lunbo_con").animate({marginLeft:-1200},1000);
 	}
 	
+})*/
+
+//nanshou的友情链接
+$(".btn_next").click(function(){
+	
+	$mL = parseInt($(".yqlink").css("margin-left"));
+	$width = $(".yqlink").width();
+		if($mL<= -1200){
+			$(".btn_next").css({"cursor":"not-allowed","background":"#ccc"})
+			$(".yqlink").css("margin-left","-1264px")
+		}else{
+			$(".yqlink").stop(true,true).animate({marginLeft:$mL-158},700);
+			$(".btn_prev").css({"cursor":"pointer","background":"#b3b3b3"});
+		}
+	console.log($mL)
+})
+$(".btn_prev").click(function(){
+	$mL = parseInt($(".yqlink").css("margin-left"));
+	$width = $(".yqlink").width();
+	if($mL == 0){
+		$(".btn_prev").css({"cursor":"not-allowed","background":"#ccc"});
+		$(".yqlink").css("margin-left","0px")
+	}else{
+		$(".yqlink").stop(true,true).animate({marginLeft:$mL+158},700);
+		$(".btn_next").css({"cursor":"pointer","background":"#b3b3b3"})
+	}
+})
+
+//广告的滚动
+window.onload = function(){ 
+  
+    /*计算一个segment的宽度*/
+  
+    var segmentWidth = 0; 
+    $(".gundong #content li").each(function(){ 
+      segmentWidth+= $(this).outerHeight(true); 
+    }); 
+  
+    $(".gundong #content li").clone().appendTo($(".gundong #content")); 
+  
+    run(10000); 
+  
+    function run(interval){ 
+      $(".gundong #content").animate({"top":-segmentWidth}, interval,"linear",function(){ 
+        $(".gundong #content").css("top",0); 
+        run(10000); 
+      }); 
+    } 
+  
+    $(".gundong").mouseenter(function(){ 
+      $(".gundong #content").stop(); 
+    }).mouseleave(function(){ 
+      var passedCourse = -parseInt($(".gundong #content").css("top")); 
+      var time = 6000 * (1 - passedCourse/segmentWidth); 
+      run(time); 
+    }); 
+    
+    
+    
+    //手机跟随条
+    var oPic = document.getElementById("bg_tiao");
+		var oPicTop = oPic.offsetTop;
+		window.onscroll = function(){
+			var sTop = document.body.scrollTop || document.documentElement.scrollTop;
+//			console.log(sTop)
+			if(sTop>640 && sTop<1200){
+				startMove( parseInt(sTop - 750) , oPic );
+			}
+			
+		}
+	}
+	var timer = null;
+	function startMove(target,obj){
+		clearInterval(timer);
+		timer = setInterval(function(){
+			var speed = (target-obj.offsetTop)/10;
+			var speed = speed > 0 ? Math.ceil(speed) : Math.floor(speed);
+			if( obj.offsetTop == target ){
+				clearInterval(timer);
+			}else{
+				obj.style["top"] = obj.offsetTop + speed + "px";
+			}
+		},30)
+  }; 
+  
+
+//ajax数据未加载完成前的动画
+/*$(document).ready(function(){
+     $.ajax({
+        type:"get",
+        cache:false,
+        url:"ajaxpage.aspx?t=getcity",
+        dataType:"json",
+        beforeSend:function(){
+           $("#vvv").append('<img src="../../images/loading.gif"  />');
+        },
+        success:function(data){
+           $("#city").html(data.info);//添加下拉框的option
+        },
+        complete: function() {$("#vvv").remove();
+        }
+     })
 })*/
