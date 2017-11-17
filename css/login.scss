@@ -1,0 +1,277 @@
+body{background: #EBEBEB;}
+.header{
+    color: #333;
+//  background: #ebebeb;
+    .header_con{
+        width: 998px;
+        height: 67px;
+        margin:0 auto;
+        .main_logo{
+            width: 171px;
+            height: 57px;
+            margin-right: 20px;
+            float: left;
+            img{
+                width: 167px;
+                height: 43px;
+                margin-left: 4px;
+                margin-top: 12px;
+            }
+        }
+        .header_mark{
+            width: 807px;
+            height: 67px;
+            float: left;
+            line-height: 67px;
+            .shu{
+                font-size: 18px;
+                margin-top: -2px;
+                float: left;
+                color: #cccccc;
+            }
+            .huawei{
+                font-size: 18px;
+                margin-top: -1px;
+                float: left;
+                margin-left:18px;color:#333333
+            }
+        }
+    }
+}
+.login{
+    height: 590px;
+    background:#081638 url(../login_img/login_bg.png) no-repeat center;
+    .login_C{width: 1130px;height: 590px;margin: 0 auto;}
+    .login_con{
+        width: 380px;
+        height: 530px;
+        margin:30px 0;
+        float: right;
+        background: #fff;
+        .userLogin{
+            width: 380px;
+            height: 20px;
+            margin: 24px 0;
+            a{
+                display: block;
+                float: left;
+                width: 169px;
+                height: 20px;
+                line-height: 20px;
+                padding: 0 10px;
+                font-size: 20px;
+                color: #333;
+                text-align: center;
+                vertical-align: middle;
+            }
+            .acount{
+                color: #B60600;
+            }
+            .aline{
+                border-left: 1px solid #cccccc;
+            }
+            .aline:hover{
+                color: #B60600;
+            }
+        }
+        .b-account{
+            margin:0 26px;
+            width: 328px;
+            height: 309px;
+            
+            #b_text{
+                width: 328px;
+                height: 43px;
+                display: block;
+                border: none;
+                border-bottom: 1px solid #D1D1D1;
+                color: #333333;
+                padding: 15px 0px;
+                font-size: 14px;
+                height: 16px;
+                line-height: 16px;
+                border-radius: 0px;
+            }
+            #b_pass{
+                width: 328px;
+                height: 43px;
+                display: block;
+                border: none;
+                border-bottom: 1px solid #D1D1D1;
+                color: #333333;
+                padding: 15px 0px;
+                font-size: 14px;
+                height: 16px;
+                line-height: 16px;
+                border-radius: 0px;
+            }
+            .b_box{
+                margin: 20px 0;
+                padding-left: 46px;
+                width: 280px;
+                height: 42px;
+                line-height: 42px;
+                font-size: 14px;
+                color: #333333;
+                background: #EBEBEB;
+                border: 1px solid #D1D1D1;
+                .yuan{
+                    width: 18px;
+                    height: 18px;
+                    border-radius: 9px;
+                    background: #e71518;
+                    float: left;
+                    margin-top:12px ;
+                    line-height: 18px;
+                    margin-right: 5px;
+                    text-align: center;
+                    color: #fff;
+                    font-weight: 900;
+                }
+            }
+            #checkRem{
+                margin-top: 2px;
+                float: left;
+            }
+            .rem_huawei{
+                color: #333;
+                font-size: 12px;
+                line-height: 12px;
+                height: 12px;
+                display: block;
+                float: left;
+                
+            }
+            #login_button{
+                    background-color: #B60600;
+                    color: #fff;
+                    border-color: #B60600;
+                    border-width: 0 0 2px 0;
+                    border-style: solid;
+                    line-height: 44px;
+                    height: 44px;
+                    font-weight: bold;
+                    font-size: 14px;
+                    background-image: none;
+                    cursor: pointer;
+                    border-radius: 26px;
+                    text-align: center;
+                    margin-top: 20px;
+                    width: 100%;
+            }
+            #login_button:hover{
+                background-color: #C70000;
+            }
+            .forget{
+                width: 328px;
+                height: 18px;
+                line-height: 18px;
+                text-align: center;
+                margin-top: 15px;
+                a{
+                    padding-right: 10px;
+                    border-right: 1px solid #cccccc;
+                    text-align: right;
+                    color: #999;
+                    font-size: 12px;
+                }
+                .forget_pass{
+                    padding-left: 10px;
+                    text-align: left;
+                    border-right: 0;
+                }
+                a:hover{
+                    color: #B60600;
+                    border-bottom: 1px solid #B60600;
+                }
+            }
+            .b_b{
+                width: 328px;
+                height: 100px;
+                .b_b1{
+                    margin-top: 65px;
+                    width: 328px;
+                    height: 17px;
+                    line-height: 17px;
+                    font-size: 12px;
+                    color: #999;
+                    margin-bottom: 18px;
+                    text-align: center;
+                    background: url(../login_img/loginb_bg_03.jpg) no-repeat center;
+                    
+                }
+                a{
+                    width: 42px;
+                    height: 42px;
+                    display: block;
+                    float: left;
+                    line-height: 42px;
+                    margin: 0 10px;
+                    i{
+                        font-size: 38px!important;
+                    }
+                    color: #999999;
+                }
+                .b_a1{
+                    margin-left: 80px;
+                }
+                a:hover{
+                    color: #005AFF;
+                }
+                a:hover .icon-weixin{
+                    color: green;
+                }
+            }
+        }
+        .b-account2{
+            width: 380px;
+            min-height: 376px;_height:376px;
+//          background: pink;
+            display: none;
+            
+            .erweima{
+                width: 160px;
+                height: 160px;
+                margin:79px 110px 79px 110px;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+           p{
+               margin-left: 10px;
+               width:360px;
+               height: 25px;
+               line-height: 25px;
+               font-size: 14px;
+               color: #333;
+               text-align: center;
+           }
+        }
+    }
+}
+#bottom_bg{background: #ebebeb;}
+.login_bottom{
+    margin: 20px auto;
+    text-align: center;
+    font-size: 12px;
+    color: #999;
+    width: 1000px;
+    .bot_nav{
+            text-align: center;
+            font-size: 12px;
+            color: #999;
+            a{
+                font-size: 14px;
+                color: #999;
+                padding: 0 10px;
+                line-height: 24px;
+            }
+            .foot_em{
+                font-size: 16px;
+            }
+            .copy{
+                line-height: 24px;
+            }
+    }
+}

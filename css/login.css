@@ -1,0 +1,241 @@
+body {
+  background: #EBEBEB; }
+
+.header {
+  color: #333; }
+  .header .header_con {
+    width: 998px;
+    height: 67px;
+    margin: 0 auto; }
+    .header .header_con .main_logo {
+      width: 171px;
+      height: 57px;
+      margin-right: 20px;
+      float: left; }
+      .header .header_con .main_logo img {
+        width: 167px;
+        height: 43px;
+        margin-left: 4px;
+        margin-top: 12px; }
+    .header .header_con .header_mark {
+      width: 807px;
+      height: 67px;
+      float: left;
+      line-height: 67px; }
+      .header .header_con .header_mark .shu {
+        font-size: 18px;
+        margin-top: -2px;
+        float: left;
+        color: #cccccc; }
+      .header .header_con .header_mark .huawei {
+        font-size: 18px;
+        margin-top: -1px;
+        float: left;
+        margin-left: 18px;
+        color: #333333; }
+
+.login {
+  height: 590px;
+  background: #081638 url(../login_img/login_bg.png) no-repeat center; }
+  .login .login_C {
+    width: 1130px;
+    height: 590px;
+    margin: 0 auto; }
+  .login .login_con {
+    width: 380px;
+    height: 530px;
+    margin: 30px 0;
+    float: right;
+    background: #fff; }
+    .login .login_con .userLogin {
+      width: 380px;
+      height: 20px;
+      margin: 24px 0; }
+      .login .login_con .userLogin a {
+        display: block;
+        float: left;
+        width: 169px;
+        height: 20px;
+        line-height: 20px;
+        padding: 0 10px;
+        font-size: 20px;
+        color: #333;
+        text-align: center;
+        vertical-align: middle; }
+      .login .login_con .userLogin .acount {
+        color: #B60600; }
+      .login .login_con .userLogin .aline {
+        border-left: 1px solid #cccccc; }
+      .login .login_con .userLogin .aline:hover {
+        color: #B60600; }
+    .login .login_con .b-account {
+      margin: 0 26px;
+      width: 328px;
+      height: 309px; }
+      .login .login_con .b-account #b_text {
+        width: 328px;
+        height: 43px;
+        display: block;
+        border: none;
+        border-bottom: 1px solid #D1D1D1;
+        color: #333333;
+        padding: 15px 0px;
+        font-size: 14px;
+        height: 16px;
+        line-height: 16px;
+        border-radius: 0px; }
+      .login .login_con .b-account #b_pass {
+        width: 328px;
+        height: 43px;
+        display: block;
+        border: none;
+        border-bottom: 1px solid #D1D1D1;
+        color: #333333;
+        padding: 15px 0px;
+        font-size: 14px;
+        height: 16px;
+        line-height: 16px;
+        border-radius: 0px; }
+      .login .login_con .b-account .b_box {
+        margin: 20px 0;
+        padding-left: 46px;
+        width: 280px;
+        height: 42px;
+        line-height: 42px;
+        font-size: 14px;
+        color: #333333;
+        background: #EBEBEB;
+        border: 1px solid #D1D1D1; }
+        .login .login_con .b-account .b_box .yuan {
+          width: 18px;
+          height: 18px;
+          border-radius: 9px;
+          background: #e71518;
+          float: left;
+          margin-top: 12px;
+          line-height: 18px;
+          margin-right: 5px;
+          text-align: center;
+          color: #fff;
+          font-weight: 900; }
+      .login .login_con .b-account #checkRem {
+        margin-top: 2px;
+        float: left; }
+      .login .login_con .b-account .rem_huawei {
+        color: #333;
+        font-size: 12px;
+        line-height: 12px;
+        height: 12px;
+        display: block;
+        float: left; }
+      .login .login_con .b-account #login_button {
+        background-color: #B60600;
+        color: #fff;
+        border-color: #B60600;
+        border-width: 0 0 2px 0;
+        border-style: solid;
+        line-height: 44px;
+        height: 44px;
+        font-weight: bold;
+        font-size: 14px;
+        background-image: none;
+        cursor: pointer;
+        border-radius: 26px;
+        text-align: center;
+        margin-top: 20px;
+        width: 100%; }
+      .login .login_con .b-account #login_button:hover {
+        background-color: #C70000; }
+      .login .login_con .b-account .forget {
+        width: 328px;
+        height: 18px;
+        line-height: 18px;
+        text-align: center;
+        margin-top: 15px; }
+        .login .login_con .b-account .forget a {
+          padding-right: 10px;
+          border-right: 1px solid #cccccc;
+          text-align: right;
+          color: #999;
+          font-size: 12px; }
+        .login .login_con .b-account .forget .forget_pass {
+          padding-left: 10px;
+          text-align: left;
+          border-right: 0; }
+        .login .login_con .b-account .forget a:hover {
+          color: #B60600;
+          border-bottom: 1px solid #B60600; }
+      .login .login_con .b-account .b_b {
+        width: 328px;
+        height: 100px; }
+        .login .login_con .b-account .b_b .b_b1 {
+          margin-top: 65px;
+          width: 328px;
+          height: 17px;
+          line-height: 17px;
+          font-size: 12px;
+          color: #999;
+          margin-bottom: 18px;
+          text-align: center;
+          background: url(../login_img/loginb_bg_03.jpg) no-repeat center; }
+        .login .login_con .b-account .b_b a {
+          width: 42px;
+          height: 42px;
+          display: block;
+          float: left;
+          line-height: 42px;
+          margin: 0 10px;
+          color: #999999; }
+          .login .login_con .b-account .b_b a i {
+            font-size: 38px !important; }
+        .login .login_con .b-account .b_b .b_a1 {
+          margin-left: 80px; }
+        .login .login_con .b-account .b_b a:hover {
+          color: #005AFF; }
+        .login .login_con .b-account .b_b a:hover .icon-weixin {
+          color: green; }
+    .login .login_con .b-account2 {
+      width: 380px;
+      min-height: 376px;
+      _height: 376px;
+      display: none; }
+      .login .login_con .b-account2 .erweima {
+        width: 160px;
+        height: 160px;
+        margin: 79px 110px 79px 110px; }
+        .login .login_con .b-account2 .erweima img {
+          width: 100%;
+          height: 100%; }
+      .login .login_con .b-account2 p {
+        margin-left: 10px;
+        width: 360px;
+        height: 25px;
+        line-height: 25px;
+        font-size: 14px;
+        color: #333;
+        text-align: center; }
+
+#bottom_bg {
+  background: #ebebeb; }
+
+.login_bottom {
+  margin: 20px auto;
+  text-align: center;
+  font-size: 12px;
+  color: #999;
+  width: 1000px; }
+  .login_bottom .bot_nav {
+    text-align: center;
+    font-size: 12px;
+    color: #999; }
+    .login_bottom .bot_nav a {
+      font-size: 14px;
+      color: #999;
+      padding: 0 10px;
+      line-height: 24px; }
+    .login_bottom .bot_nav .foot_em {
+      font-size: 16px; }
+    .login_bottom .bot_nav .copy {
+      line-height: 24px; }
+
+/*# sourceMappingURL=login.css.map */
