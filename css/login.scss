@@ -48,6 +48,7 @@ body{background: #EBEBEB;}
         margin:30px 0;
         float: right;
         background: #fff;
+        position: relative;
         .userLogin{
             width: 380px;
             height: 20px;
@@ -78,7 +79,11 @@ body{background: #EBEBEB;}
             margin:0 26px;
             width: 328px;
             height: 309px;
-            
+            .s{
+                font-size: 10px;
+                color: red;
+                display: none;
+            }
             #b_text{
                 width: 328px;
                 height: 43px;
@@ -188,8 +193,9 @@ body{background: #EBEBEB;}
             .b_b{
                 width: 328px;
                 height: 100px;
+                position: absolute;
+                bottom: 0;
                 .b_b1{
-                    margin-top: 65px;
                     width: 328px;
                     height: 17px;
                     line-height: 17px;
