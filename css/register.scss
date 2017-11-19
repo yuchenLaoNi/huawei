@@ -1,0 +1,220 @@
+.header{
+    background-color: #333333;
+    height: 67px;
+    min-width: 960px;_width:960px;
+    .header_con{
+        width: 960px;
+        height: 67px;
+        margin: 0 auto;
+        #logo{
+            width: 143px;
+            height: 47px;
+            margin-right: 20px;
+            float: left;
+            img{
+                width: 139px;
+                height: 33px;
+                margin:12px 0 0 4px;
+            }
+        }
+        .huawei{
+            width: 960px;
+            height: 67px;
+            line-height: 67px;
+        }
+    }
+}
+.wp{
+    width: 100%;
+    height: 100%;
+    margin: 0px auto;
+    background: #f2f2f2;
+//  min-height:708px ;_height:708px;
+    .wp_con{
+        width: 960px;
+        min-height: 678px;_height: 678px;
+        padding-top: 30px;
+        margin: 0 auto;
+        .wp_1{
+            width: 960px;
+            height: 35px;
+            .nav{
+                width: 146px;
+                height: 35px;
+                display: block;
+                float: left;
+                font-size: 16px;
+                margin-right: 12px;
+                background: #B40707;
+                //background:#ccc;
+                position: relative;
+                color: #fff;
+                line-height: 35px;
+                text-align: center;
+                i{
+                    font-size: 22px!important;
+                    margin-left: -10px;
+                    line-height: 22px;
+                    margin-right: 10px;
+                }
+            }
+            .nav_mail{
+                background: #ccc;
+            }
+            .nav_b{
+                margin-top: 8px;
+                font-size: 14px;
+                float: right;
+//              display: block;
+                height: 14px;
+                display: block;
+                line-height: 14px;
+                a{
+                    color: #0088F6;
+                }
+            }
+        }
+        .wp_2{
+            min-width: 420px;_width:420px;
+            min-height: 464px;_height:464px;
+            padding:30px 270px;
+            background: #fff;
+            font-size: 14px;
+            color: #333;
+            .w{
+                width: 418px;
+                margin-top: 10px;
+                background: #f7f7f7;
+                height: 42px;
+                border: 1px solid #d9d9d9;
+                border-radius: 21px;
+                
+                font-size: 14px;
+                color: #333;
+            }
+            .t{
+                width: 123px;
+                height: 42px;
+                padding: 0 16px;
+                border-right: 1px solid #d9d9d9;
+                line-height: 42px;
+                text-align: justify;
+                text-align-last: justify;
+                float: left;
+            }
+            .c{
+                width: 295px;
+                height: 42px;
+                margin-left: 123px;
+            }
+            .s{
+                color: red;
+                font-size: 10px;
+                display: none;
+            }
+            .cho{
+                border: 0;
+                padding: 5px;
+                padding-bottom: 7px;
+            }
+            
+            .con_1{
+                .china{
+                    padding:0 16px;
+                    width: 30px;
+                    height: 42px;
+                    line-height: 42px;
+                    cursor: pointer;
+                    letter-spacing: 3px;
+                }
+            }
+            .inp-kuang{
+                width: 279px;
+                height: 40px;
+                border: 0;
+                padding: 0 16px;
+                background: #f7f7f7;
+            }
+            .con_3 .yzm4{
+                width: 80px;
+                height: 40px;
+                margin-right: 16px;
+                float: right;
+                line-height: 40px;
+                background: url(../login_img/1.JPG) no-repeat center;
+                background-size: 100%;
+            }
+            .con_4 .yzm_get{
+                width: 96px;
+                height: 40px;
+                padding-right: 16px;
+                float: right;
+                line-height: 40px;
+                a{
+                    color: #0088F6;
+                    
+                }
+            }
+            .input_yzm{
+                width: 199px;
+                height: 40px;
+                padding: 0 16px;
+                border: 0;background: #f7f7f7;
+            }
+            .p_yzm{
+                margin-top: 30px;
+            }
+            .pwd{
+                margin-top: 30px;
+            }
+            .reg_button{
+                margin-top: 30px;
+                text-align: center;
+                width: 420px;
+                height: 40px;
+                margin-bottom: 30px;
+                #Register{
+                        background-color: #B40707;
+                        border: none;
+                        color: #fff;
+                        width: 200px;
+                        height: 40px;
+                        border-radius: 20px;
+                        -webkit-border-radius: 20px;
+                        cursor: pointer;
+                }
+                #Register:hover{
+                    background-color: red;
+                }
+            }
+        }
+        .h_40{
+            width: 960px;
+            height: 40px;
+            border-bottom: 1px solid #d7d7d7;
+            text-align: center;
+            background: #f2f2f2;
+        }
+        .bottom{
+            width: 960px;
+            height: 48px;
+            margin:30px 0;
+            text-align: center;
+            p{
+                line-height: 24px;
+                margin: 0 auto;
+                color: #999;
+                font-size: 10px;
+                a{
+                    font-size: 14px;
+                    color: #999;
+                    padding: 0 10px;
+                }
+            }
+        }
+    }
+}
+.s7{
+    margin-left: 123px;
+    margin-top: -20px;
+}

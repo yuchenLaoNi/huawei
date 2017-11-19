@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="css/register.css"/>
+		<link rel="stylesheet" type="text/css" href="font/iconfont.css"/>
+		<link rel="stylesheet" type="text/css" href="css/packcss/pintuer.css"/>
+		<script type="text/javascript" src="js/packaging/public.js"></script>
+		<script type="text/javascript" src="js/packaging/jquery-1.11.1.js"></script>
+		<script type="text/javascript" src="js/packaging/cookie.js"></script>
+		<script type="text/javascript" src="js/packaging/pintuer.js"></script>
+		
+	</head>
+	<body>
+		<div class="header">
+			<div class="header_con">
+				<div id="logo">
+					<img src="login_img/head-top.png"/>
+				</div>
+				<div class="huawei">
+					<i style="font-size: 18px;margin-top: -3px;float: left;color:#cccccc;">|</i>
+					<i style="font-size: 18px;margin-top: -1px;float: left; margin-left:18px;color:#ffffff">华为商城</i>
+				</div>
+			</div>
+		</div>
+		<div class="wp">
+			<div class="wp_con">
+				<div class="wp_1">
+					<a href="javascript:;" class="nav_phone nav"><i class="iconfont icon-huawei"></i>手机号</a>
+					<a href="javascript:;" class="nav_mail nav"><i class="iconfont icon-youxiang"></i>电子邮箱</a>
+					<i class="nav_b">已有华为账号&ensp;<a href="login.html">登录></a></i>
+				</div>
+				<div class="wp_2">
+				<form method="post" onsubmit="return false;" id="ajaxForm">	
+					<div class="councity w">
+						<div class="tip_1 t">国家</div>
+						<div class="con_1 c" title="这个随意填没验证">
+							<span class="china">中国</span>
+						</div>
+					</div>
+					<span class="s s1"></span>
+					<div class="number w">
+						<div class="tip_2 t">
+							<div class="button-group radio">
+								<label class="button active  cho">
+									<input name="pintuer" value="yes" checked="checked" type="radio" class="phone1"><span class="icon icon-check"></span>手机
+								</label>
+								<label class="button  cho">
+									<input name="pintuer" value="no" type="radio"  class="phone2"><span class="icon icon-check"></span>电话
+								</label>
+							</div>
+						</div>
+						<div class="con_2 c field">
+							<input id="tel_num" class="inp-kuang" type="text" name="" maxlength="50" tabindex="1" autocomplete="off" placeholder="请输入手机号">
+						</div>
+					</div>
+					<span class="s s2">请输入手机号</span>
+					<!--验证码-->
+					<div class="p_yzm w">
+						<div class="tip_3 t">图形验证码</div>
+						<div class="con_3 c">
+							<input id="p_yzm" class="input_yzm" type="text" name="" maxlength="50" tabindex="1" autocomplete="off" placeholder="请输入图形验证码">
+							<div class="yzm4"></div>
+						</div>
+					</div>
+					<span class="s s3">请输入验证码</span>
+					<div class="m_yzm w">
+						<div class="tip_4 t">短信验证码</div>
+						<div class="con_4 c">
+							<input id="m_yzm" class="input_yzm" type="text" name="" maxlength="50" tabindex="1" autocomplete="off" placeholder="请输入短信验证码">
+							<div class="yzm_get">
+								<a href="javascript:;" class="getyzm">获取验证码</a>
+							</div>
+						</div>
+					</div>
+					<span class="s s4">请输入验证码</span>
+					<!--密码-->
+					<div class="pwd w">
+						<div class="tip_5 t">密码</div>
+						<div class="con_5 c">
+							<input id="pwd" class="inp-kuang" type="text" name="" maxlength="50" tabindex="1" autocomplete="off" placeholder="请输入密码">
+						</div>
+					</div>
+					<span class="s s5">请输入密码</span>
+					<div class="q_pwd w">
+						<div class="tip_6 t">确认密码</div>
+						<div class="con_6 c">
+							<input id="q_pwd" class="inp-kuang" type="text" name="" maxlength="50" tabindex="1" autocomplete="off" placeholder="请再次输入密码">
+						</div>
+					</div>
+					<span class="s s6">请确认密码</span>
+					<!--注册按钮-->
+					<div class="reg_button">
+						<input type="button" class="button" name="" id="Register" value="注册" />
+					</div>
+					<span class="s s7"></span>
+				</form>	
+				</div>
+				<div class="h_40"></div>
+				<div class="bottom">
+					<p class="b_p1">
+						<a href="">用户协议</a><em>|</em>
+						<a href="">隐私政策</a><em>|</em>
+						<a href="">常见问题</a>
+					</p>
+					<p class="b_p2">Copyright © 2011-2017  华为软件技术有限公司  版权所有  保留一切权利  苏B2-20070200号 | 苏ICP备09062682号-9</p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
+<script type="text/javascript" src="js/register.js"></script>
