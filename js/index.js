@@ -331,3 +331,17 @@ window.onload = function(){
         }
      })
 })*/
+
+//关于cookie,如果有
+var a=getCookie("tel");
+var c_start=document.cookie.indexOf("tel=");
+ if(c_start == -1){
+  	$("#login_form").show();
+    $("#logined").hide();
+ }
+ else{
+  $("#login_form").hide();
+  $("#register").hide();
+     $("#logined").show();
+     $("#ustr").html(a+"，您好");
+ }

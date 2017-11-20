@@ -7,7 +7,7 @@
 	<title>30种CSS3炫酷页面预加载loading动画特效|DEMO28_jQuery之家-自由分享jQuery、html5、css3的插件库</title>
 	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
 	<link rel="stylesheet" type="text/css" href="css/default.css">
-	<link href="http://cdn.bootcss.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href="css/packcss/font-awesome.min.css" rel="stylesheet">
 	<link href="css/Icomoon/style.css" rel="stylesheet" type="text/css" />
 	<script type="text/javascript" src="js/packaging/jquery-2.0.2.min.js"></script>
 	<script type="text/javascript" src="js/packaging/main.js"></script>
@@ -107,9 +107,18 @@
 	    transform: rotate(360deg) scale(0.8); 
 	  }	
 	}
+	.text{
+		position: fixed;
+		top: 35%;
+		left: 45%;
+		z-index: 2;
+		font-size: 30px;
+		color: #000000;
+	}
 	</style>
 </head>
 <body>
+	<div class="text"><i>正在跳转中···</i></div>
 	<div id="loading">
 		<div id="loading-center">
 			<div id="loading-center-absolute">
@@ -120,7 +129,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="htmleaf-container">
+<!--	<div class="htmleaf-container">
 		<header class="htmleaf-header">
 			<h1>30种CSS3炫酷页面预加载loading动画特效 - DEMO28<span>30 CSS3 Page Preload Animations</span></h1>
 			<div class="htmleaf-links">
@@ -180,7 +189,7 @@
 			  <h3>12种炫酷html5 svg加载loading动画特效</h3>
 			</a>
 		</div>
-	</div>
+	</div>-->
 </body>
 </html>
 <script type="text/javascript">
