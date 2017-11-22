@@ -566,8 +566,8 @@
                     line-height: 22px;
                     text-align: center;
                     font-weight: bold;
-                    color: #c4c4c4;
-                    cursor: not-allowed; }
+                    cursor: pointer;
+                    color: #777; }
             .shop_bg .shop_main_2 .list_2 .list_con .con_t ul .li1 {
               width: 470px;
               max-height: 42px;

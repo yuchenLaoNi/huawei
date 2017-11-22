@@ -81,6 +81,7 @@ $(".n1_ul>li").click(function(){
 })
 //json
 window.onload = function(){
+	var brr=[];
 	var index = 1;
 	var deff = $.ajax({
 		type:"get",
@@ -108,7 +109,73 @@ window.onload = function(){
 
 		});
 
-	})	
+	})
+	var shopsum = 0;
+	var good=0;
+	//购物车链接
+	$(".list_ul").on("click",".rec_1",function(){
+		brr.length=0;
+			var arr = [];
+			var flag = true;//如果值为真 就像arr中push商品
+			var datajson = {
+				id : $(this).parent().parent().next().data("id"),
+				name :  $(this).parent().parent().next().data("name"),
+				price :  $(this).parent().parent().next().data("price"),
+				src :  $(this).parent().parent().next().data("src"),
+				rec1 :  $(this).parent().parent().next().data("rec1"),
+				rec2 :  $(this).parent().parent().next().data("rec2"),
+				count : 1
+			}
+			
+			//再次点击时   商品会被覆盖    可以先将cookie中的数据取出来  存入到arr中
+			var oldCookie = getCookie("prolist");
+//			console.log(oldCookie);
+			
+			//如果cookie中没有数据 直接push 
+			if( oldCookie.length != 0 ){
+				arr=oldCookie;
+				//再次点击商品时  判断这个商品在原cookie中是否存在  如果存在就将数量++
+				for( var i = 0 ; i < arr.length ; i++ ){
+					if( datajson.id == arr[i].id && datajson.name == arr[i].name){
+						arr[i].count++;
+						flag = false;
+						break;
+					}
+				}
+			}
+			
+			if( flag ){//如果值为真 就像arr中push商品
+				arr.push( datajson );
+			}
+			for(var i = 0; i < arr.length ; i++){
+				shopinfo = arr[i];
+				brr.push(shopinfo.count)
+//				console.log(shopinfo)
+				shopsum = shopinfo.count;
+			}
+			shopsum=brr.reduce(function(a,b){
+				return a+b;
+			})
+//			console.log(shopsum)
+			//将数组信息存入到cookie
+			setCookie( "prolist", JSON.stringify(arr) );
+			//购物车count
+			$(".shop_count").html(shopsum);
+			$(".shop_count").css("color","red");
+			$("#GoodtoShop").show();
+			setTimeout(function(){
+				$("#GoodtoShop").hide();
+			},1000)
+			
+			if(good >= 5){
+				if( !confirm("去购物车结算？确认：在等会；取消：直接去") ){
+					location.href = "shopcat.html";
+				}
+			}else{
+				good++;
+			}
+			
+		})
 }
 function showData(index,arr){
 	var str = "";
@@ -125,12 +192,14 @@ function showData(index,arr){
 							<a href="javascript:;" class="rec_1">${arr[i].rec_1}</a>
 							<i class="rec_2">${arr[i].rec_2}</i>
 						</p>
-					</div>	
+					</div>
+					<span style="display:none" data-id="${arr[i].phone_id}" data-name="${arr[i].phone_name}" data-src="${arr[i].phone_img}" data-price="${arr[i].phone_price}" data-rec1="${arr[i].rec_1}" data-rec2="${arr[i].rec_2}"></span>
 				</li>`;
     	}
     }
     $(".list_ul").html( str );
 }
+
 //nanshou的友情链接
 $(".btn_next").click(function(){
 	
@@ -156,3 +225,4 @@ $(".btn_prev").click(function(){
 		$(".btn_next").css({"cursor":"pointer","background":"#b3b3b3"})
 	}
 })
+

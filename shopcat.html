@@ -40,7 +40,7 @@
 				</div>
 				<div class="leadR">
 					<ol>
-						<li><a href=""><img src="index_img/images/shopping01_03.png" alt="" id="shopping1"/>购物车(0)</a></li>
+						<li><a href=""><img src="index_img/images/shopping01_03.png" alt="" id="shopping1"/>购物车(<i class="shop_count" style="color: #999;">0</i>)</a></li>
 						<li><a href="">我的订单</a></li>
 						<li class="border0">
 							<a href="login.html" id="login_form">请登录</a>
@@ -93,6 +93,7 @@
 				</div>
 				<div id="h_10"></div>
 				<!--json-->
+				<div class="add_json">
 				<div class="list_2">
 					<label class="fl">
 						<input class="ck" type="checkbox"/>
@@ -107,8 +108,8 @@
 									<div class="stock">
 										<input type="text" id="shop_num" value="1" />
 										<p class="stock_btn">
-											<a href="javascript:;" class="jia">+</a>
-											<a href="javascript:;" class="jian">−</a>
+											<a href="javascript:;" class="jia" data-number="1">+</a>
+											<a href="javascript:;" class="jia jian" data-number="-1">-</a>
 										</p>
 									</div>
 								</li>
@@ -124,6 +125,7 @@
 						</div>
 					</div>
 				</div>
+				</div>
 				<!---->
 				<div class="list_3">
 					<label class="fl">
@@ -131,8 +133,8 @@
 					</label>
 					<a href="javascript:;" class="jiesuan">立即结算</a>
 					<div class="zongji">
-						<p class="zongji1"><label>总计</label><span>¥ 4897.00</span></p>
-						<div class="zongji2">已选择&ensp;<em class="ZX">3</em>&ensp;件商品，不得不说是真的便宜</div>
+						<p class="zongji1"><label>总计</label>¥<span class="money2">0.00</span></p>
+						<div class="zongji2">已选择&ensp;<em class="ZX">0</em>&ensp;件商品，不得不说是真的便宜</div>
 					</div>
 				</div>
 			</div>
