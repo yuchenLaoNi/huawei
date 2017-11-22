@@ -33,7 +33,7 @@ var c_start=document.cookie.indexOf("tel=");
 
 //放大镜
 //鼠标移入小图  显示对应的中图  和大图
-	$("#bottom li").mouseenter(function(){
+	$("#bottom_s li").mouseenter(function(){
 		var index = $(this).index();
 		$("#small img").eq(index)
 					   .show()
@@ -81,10 +81,10 @@ var c_start=document.cookie.indexOf("tel=");
 	})
 //关于放大镜下面的2个按钮(非通用)
 $(".prev").click(function(){
-	$("#bottom").animate({"left":0},300);
+	$("#bottom_s").animate({"left":0},300);
 })
 $(".next").click(function(){
-	$("#bottom").animate({"left":-62},300);
+	$("#bottom_s").animate({"left":-62},300);
 })
 //分期那个hover有东西
 $(".fenqi").hover(function(){
@@ -137,4 +137,65 @@ $("#shop_num").keyup(function(){
 	if(Number($("#shop_num").val()) < 1 || isNaN($("#shop_num").val())){
 		$("#shop_num").val(1)
 	}
+})
+//tuijian_nav
+$(".tui_prev").click(function(){
+	$(".tui_ul").animate({"left":0},500);
+})
+$(".tui_next").click(function(){
+	$(".tui_ul").animate({"left":-564},500);
+})
+
+//吸顶
+var h = $(".p_nav").offset().top;
+window.onscroll = function(){
+		
+		//1 获取页面滚走的距离
+		var sTop =$("body,html").scrollTop();
+//		
+		//2 当页面滚走的距离 大于 头部的高度时   开始吸顶
+		if( sTop > h ){
+			$(".p_nav").css({
+				"position":"fixed",
+				"top":0,
+				"padding":"12px 0 13px 0"
+			});
+			$(".gouwu").css("display","block")
+		}else{
+			$(".p_nav").css({"position":"relative","padding":"36px 0 37px 0"})
+			$(".gouwu").css("display","none")
+		}
+	}
+
+//
+//nanshou的友情链接
+$(".btn_next").click(function(){
+	
+	$mL = parseInt($(".yqlink").css("margin-left"));
+	$width = $(".yqlink").width();
+		if($mL<= -1200){
+			$(".btn_next").css({"cursor":"not-allowed","background":"#ccc"})
+			$(".yqlink").css("margin-left","-1264px")
+		}else{
+			$(".yqlink").stop(true,true).animate({marginLeft:$mL-158},700);
+			$(".btn_prev").css({"cursor":"pointer","background":"#b3b3b3"});
+		}
+	console.log($mL)
+})
+$(".btn_prev").click(function(){
+	$mL = parseInt($(".yqlink").css("margin-left"));
+	$width = $(".yqlink").width();
+	if($mL == 0){
+		$(".btn_prev").css({"cursor":"not-allowed","background":"#ccc"});
+		$(".yqlink").css("margin-left","0px")
+	}else{
+		$(".yqlink").stop(true,true).animate({marginLeft:$mL+158},700);
+		$(".btn_next").css({"cursor":"pointer","background":"#b3b3b3"})
+	}
+})
+//点击阅读全文
+$(".all_a").click(function(){
+	$(".white_hidden").css("display","none");
+	$(".all_a").css("display","none");
+	$(".all_p").css({"height":"17255px"})
 })

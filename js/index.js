@@ -259,7 +259,7 @@ $(".btn_prev").click(function(){
 //广告的滚动
 window.onload = function(){ 
   
-    /*计算一个segment的宽度*/
+  /* // 广告的方法一（匀速）
   
     var segmentWidth = 0; 
     $(".gundong #content li").each(function(){ 
@@ -284,8 +284,25 @@ window.onload = function(){
       var time = 6000 * (1 - passedCourse/segmentWidth); 
       run(time); 
     }); 
-    
-    
+    */
+    //广告滚动的第二种方法
+    var AdersTime = setInterval(Guanggao,2000);
+	function Guanggao(){
+    		
+			$(".gundong #content").animate({"top":-$(".gundong #content li").eq(0).height()+"px"},300,function(){
+				$(".gundong #content").css({"top":0})
+							.find("li:first")
+							.appendTo($(".gundong #content"));
+			});
+			
+		}
+	var segmentWidth = 0; 
+	$(".gundong").mouseenter(function(){ 
+      $(".gundong #content").stop();
+      clearInterval(AdersTime);
+    }).mouseleave(function(){ 
+       AdersTime = setInterval(Guanggao,2000)
+    }); 
     
     //手机跟随条
     var oPic = document.getElementById("bg_tiao");
@@ -345,3 +362,5 @@ var c_start=document.cookie.indexOf("tel=");
      $("#logined").show();
      $("#ustr").html(a+"，您好");
  }
+ 
+
